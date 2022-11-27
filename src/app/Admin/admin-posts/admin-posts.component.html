@@ -1,0 +1,21 @@
+<div class="container">
+  <br />
+  <h1>Latest news</h1>
+  <br />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>
+          {{ post.BlogTitle }}
+        </td>
+        <a [routerLink]="['/admin/posts', post.Id]">Read more...</a>
+      </tr>
+    </tbody>
+  </table>
+</div>

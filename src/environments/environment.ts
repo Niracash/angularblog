@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // my api url from swagger
+  apiUrl: 'https://localhost:7012'
 };
 
 /*

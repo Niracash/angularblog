@@ -1,0 +1,110 @@
+<div class="container" *ngIf="post">
+  <br />
+  <h1>View news</h1>
+  <br />
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Id</label>
+      <input
+        type="text"
+        class="form-control"
+        name="Id"
+        [(ngModel)]="post.Id"
+        readonly
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">News Title</label>
+      <input
+        type="text"
+        class="form-control"
+        name="BlogTitle"
+        [(ngModel)]="post.BlogTitle"
+        readonly
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">News Image Url</label>
+      <input
+        type="text"
+        class="form-control"
+        name="BlogImageUrl"
+        [(ngModel)]="post.BlogImageUrl"
+        readonly
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">News Content</label>
+      <input
+        type="text"
+        class="form-control"
+        name="BlogContent"
+        [(ngModel)]="post.BlogContent"
+        readonly
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Summary</label>
+      <input
+        type="text"
+        class="form-control"
+        name="Summary"
+        [(ngModel)]="post.BlogSummary"
+        readonly
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Url Handle</label>
+      <input
+        type="text"
+        class="form-control"
+        name="urlHandle"
+        [(ngModel)]="post.UrlHandle"
+        readonly
+      />
+    </div>
+
+    <div class="form-check mb-3">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        name="Visible"
+        [(ngModel)]="post.Visible"
+        readonly
+      />
+      <label class="form-check-label">Visible</label>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Published Date</label>
+      <input
+        type="text"
+        class="form-control"
+        name="PublishedDate"
+        [(ngModel)]="post.PublishedDate"
+        readonly
+      />
+
+      <div class="mb-3">
+        <label class="form-label">Edited Date</label>
+        <input
+          type="text"
+          class="form-control"
+          name="EditedDate"
+          [(ngModel)]="post.EditedDate"
+          readonly
+        />
+
+        <div class="mb-3">
+          <button class="btn btn-primary">Update</button>
+          <a class="btn btn-danger" (click)="deletePost()">Delete</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

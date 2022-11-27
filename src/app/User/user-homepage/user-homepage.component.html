@@ -1,0 +1,17 @@
+<div class="container" *ngIf="posts">
+  <div *ngFor="let post of posts" class="card" style="width: 18rem">
+    <img [src]="post.BlogImageUrl" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ post.BlogTitle }}
+      </h5>
+      <article class="card-text" [innerHTML]="post.BlogSummary">
+        {{ post.BlogSummary }}
+      </article>
+      <br />
+      <a class="btn btn-primary" [routerLink]="['/news', post.Id]"
+        >Read more...</a
+      >
+    </div>
+  </div>
+</div>
