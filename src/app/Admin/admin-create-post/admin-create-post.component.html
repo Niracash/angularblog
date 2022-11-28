@@ -2,15 +2,15 @@
   <br />
   <h1>Create news</h1>
   <br />
-  <form #form="ngForm">
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <label class="form-label">News Title</label>
       <input
         type="text"
         class="form-control"
         name="BlogTitle"
-        [(ngModel)]="post.BlogTitle"
-        readonly
+        [(ngModel)]="post.blogTitle"
+
       />
     </div>
 
@@ -20,8 +20,7 @@
         type="text"
         class="form-control"
         name="BlogImageUrl"
-        [(ngModel)]="post.BlogImageUrl"
-        readonly
+        [(ngModel)]="post.blogImageUrl"
       />
     </div>
 
@@ -31,8 +30,7 @@
         type="text"
         class="form-control"
         name="BlogContent"
-        [(ngModel)]="post.BlogContent"
-        readonly
+        [(ngModel)]="post.blogContent"
       />
     </div>
 
@@ -42,8 +40,7 @@
         type="text"
         class="form-control"
         name="Summary"
-        [(ngModel)]="post.BlogSummary"
-        readonly
+        [(ngModel)]="post.blogSummary"
       />
     </div>
 
@@ -53,8 +50,7 @@
         type="text"
         class="form-control"
         name="urlHandle"
-        [(ngModel)]="post.UrlHandle"
-        readonly
+        [(ngModel)]="post.urlHandle"
       />
     </div>
 
@@ -63,8 +59,7 @@
         type="checkbox"
         class="form-check-input"
         name="Visible"
-        [(ngModel)]="post.Visible"
-        readonly
+        [(ngModel)]="post.visible"
       />
       <label class="form-check-label">Visible</label>
     </div>
@@ -75,8 +70,7 @@
         type="text"
         class="form-control"
         name="PublishedDate"
-        [(ngModel)]="post.PublishedDate"
-        readonly
+        [(ngModel)]="post.publishedDate"
       />
 
       <div class="mb-3">
@@ -85,12 +79,11 @@
           type="text"
           class="form-control"
           name="EditedDate"
-          [(ngModel)]="post.EditedDate"
-          readonly
+          [(ngModel)]="post.editedDate"
         />
 
         <div class="mb-3">
-          <button class="btn btn-primary">Update</button>
+          <button class="btn btn-primary">Create</button>
         </div>
       </div>
     </div>

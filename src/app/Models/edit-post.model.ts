@@ -1,11 +1,11 @@
 export interface EditPost {
-  BlogTitle: string | undefined;
-  BlogContent: string| undefined;
-  BlogSummary: string| undefined;
-  UrlHandle: string| undefined;
-  BlogImageUrl: string| undefined;
-  Visible: boolean| undefined;
-  BlogAuthor: string| undefined;
-  PublishedDate: Date| undefined;
-  EditedDate: Date| undefined;
+  blogTitle: string | undefined;
+  blogContent: string| undefined;
+  blogSummary: string| undefined;
+  urlHandle: string| undefined;
+  blogImageUrl: string| undefined;
+  visible: boolean| undefined;
+  blogAuthor: string| undefined;
+  publishedDate: Date| undefined;
+  editedDate: Date| undefined;
 }

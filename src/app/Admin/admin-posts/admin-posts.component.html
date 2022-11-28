@@ -12,9 +12,9 @@
     <tbody>
       <tr *ngFor="let post of posts">
         <td>
-          {{ post.BlogTitle }}
+          {{ post.blogTitle }}
         </td>
-        <a [routerLink]="['/admin/posts', post.Id]">Read more...</a>
+        <a [routerLink]="['/admin/posts', post.id]">Read more...</a>
       </tr>
     </tbody>
   </table>

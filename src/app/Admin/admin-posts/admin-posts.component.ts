@@ -22,6 +22,7 @@ export class AdminPostsComponent implements OnInit {
     .subscribe(
       res =>{
         console.log(res);
+        this.posts=res;
 
       }
     )

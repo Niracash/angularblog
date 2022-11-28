@@ -16,15 +16,15 @@ export class AdminCreatePostComponent implements OnInit {
 
   post: CreatePost = {
 
-      BlogAuthor: '',
-      BlogTitle: '',
-      BlogContent: '',
-      BlogImageUrl: '',
-      BlogSummary: '',
-      PublishedDate: '',
-      EditedDate: '',
-      Visible: true,
-      UrlHandle: '',
+      blogAuthor: '',
+      blogTitle: '',
+      blogContent: '',
+      blogImageUrl: '',
+      blogSummary: '',
+      publishedDate: '',
+      editedDate: '',
+      visible: true,
+      urlHandle: '',
   }
 
   ngOnInit(): void {

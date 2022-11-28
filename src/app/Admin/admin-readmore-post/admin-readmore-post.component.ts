@@ -38,18 +38,18 @@ export class AdminReadmorePostComponent implements OnInit {
 
   onSubmit():void{
     const editPost: EditPost = {
-      BlogAuthor: this.post?.BlogAuthor,
-      BlogTitle: this.post?.BlogTitle,
-      BlogContent: this.post?.BlogContent,
-      BlogImageUrl: this.post?.BlogImageUrl,
-      BlogSummary: this.post?.BlogSummary,
-      PublishedDate: this.post?.PublishedDate,
-      EditedDate: this.post?.EditedDate,
-      Visible: this.post?.Visible,
-      UrlHandle: this.post?.UrlHandle,
+      blogAuthor: this.post?.blogAuthor,
+      blogTitle: this.post?.blogTitle,
+      blogContent: this.post?.blogContent,
+      blogImageUrl: this.post?.blogImageUrl,
+      blogSummary: this.post?.blogSummary,
+      publishedDate: this.post?.publishedDate,
+      editedDate: this.post?.editedDate,
+      visible: this.post?.visible,
+      urlHandle: this.post?.urlHandle,
 
     }
-    this.postService.editPost(this.post?.Id, editPost)
+    this.postService.editPost(this.post?.id, editPost)
     .subscribe(
       response => {
         alert('sucessfully updated the blog')
@@ -58,7 +58,7 @@ export class AdminReadmorePostComponent implements OnInit {
   }
 
   deletePost():void{
-    this.postService.deletePost(this.post?.Id).subscribe(
+    this.postService.deletePost(this.post?.id).subscribe(
       res => {
         alert('Deleted successfully!');
       }

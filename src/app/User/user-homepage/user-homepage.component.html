@@ -1,15 +1,15 @@
 <div class="container" *ngIf="posts">
-  <div *ngFor="let post of posts" class="card" style="width: 18rem">
-    <img [src]="post.BlogImageUrl" class="card-img-top" alt="..." />
+  <div *ngFor="let post of posts" class="card" >
+    <img [src]="post.blogImageUrl" class="card-img-top"/>
     <div class="card-body">
       <h5 class="card-title">
-        {{ post.BlogTitle }}
+        {{ post.blogTitle }}
       </h5>
-      <article class="card-text" [innerHTML]="post.BlogSummary">
-        {{ post.BlogSummary }}
+      <article class="card-text" [innerHTML]="post.blogSummary">
+        {{ post.blogSummary }}
       </article>
       <br />
-      <a class="btn btn-primary" [routerLink]="['/news', post.Id]"
+      <a class="btn btn-primary" [routerLink]="['/news', post.id]"
         >Read more...</a
       >
     </div>

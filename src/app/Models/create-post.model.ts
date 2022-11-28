@@ -1,11 +1,11 @@
 export interface CreatePost {
-  BlogTitle: string | undefined;
-  BlogContent: string| undefined;
-  BlogSummary: string| undefined;
-  UrlHandle: string| undefined;
-  BlogImageUrl: string| undefined;
-  Visible: boolean| undefined;
-  BlogAuthor: string| undefined;
-  PublishedDate: string| undefined;
-  EditedDate: string| undefined;
+  blogTitle: string | undefined;
+  blogContent: string| undefined;
+  blogSummary: string| undefined;
+  urlHandle: string| undefined;
+  blogImageUrl: string| undefined;
+  visible: boolean| undefined;
+  blogAuthor: string| undefined;
+  publishedDate: string| undefined;
+  editedDate: string| undefined;
 }

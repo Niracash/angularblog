@@ -1,12 +1,12 @@
 <div class="container" *ngIf="post">
   <div class="card" style="width: 18rem">
-    <img [src]="post.BlogImageUrl" class="card-img-top" alt="..." />
+    <img [src]="post.blogImageUrl" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
-        {{ post.BlogTitle }}
+        {{ post.blogTitle }}
       </h5>
-      <article class="card-text" [innerHTML]="post.BlogContent">
-        {{ post.BlogContent }}
+      <article class="card-text" [innerHTML]="post.blogContent">
+        {{ post.blogContent }}
       </article>
     </div>
   </div>
